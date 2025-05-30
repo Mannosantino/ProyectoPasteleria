@@ -13,7 +13,23 @@ body {
     display: flex;
     flex-direction: column;
 }
-  
+
+.about-container {
+    background-color: #ABAC68; 
+    padding: 20px;
+    margin: 20px 0; 
+    border-radius: 8px; 
+    justify-content: right;
+}
+
+.about-container p {
+    color: #ffff ; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+    justify-content: right;
+}
+
+
 header {
     background-color: #384C1B;
     padding: 1rem 2rem;
@@ -128,9 +144,9 @@ nav a:hover {
 }
   
 .about-section {
-    background-color: #e8c1a0;
+    background-color: #ABAC68;
     padding: 3rem 2rem;
-    color: #4a3c31;
+    color: #e8c1a0;
     max-width: 900px;
     margin: 3rem auto;
     border-radius: 12px;
@@ -141,6 +157,7 @@ nav a:hover {
     font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    color: #ffff;
 }
   
 .about-section p {
@@ -160,8 +177,6 @@ footer {
     font-size: 0.9rem;
 }
 
-
-
 .card {
     width: fit-content;
     height: fit-content;
@@ -172,10 +187,9 @@ footer {
     padding: 25px 25px;
     gap: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-  }
+}
   
-  /* for all social containers*/
-  .socialContainer {
+.socialContainer {
     width: 52px;
     height: 52px;
     background-color: rgb(44, 44, 44);
@@ -184,46 +198,36 @@ footer {
     justify-content: center;
     overflow: hidden;
     transition-duration: .3s;
-  }
-  /* instagram*/
-  .containerOne:hover {
+}
+
+.containerOne:hover {
     background-color: #d62976;
     transition-duration: .3s;
-  }
-  /* twitter*/
-  .containerTwo:hover {
-    background-color: #00acee;
-    transition-duration: .3s;
-  }
-  /* linkdin*/
-  .containerThree:hover {
-    background-color: #0072b1;
-    transition-duration: .3s;
-  }
-  /*whatsapp*/
-  .containerFour:hover {
+}
+
+.containerFour:hover {
     background-color: #128C7E;
     transition-duration: .3s;
-  }
+}
   
-  .socialContainer:active {
+.socialContainer:active {
     transform: scale(0.9);
     transition-duration: .3s;
-  }
+}
   
-  .socialSvg {
+.socialSvg {
     width: 17px;
-  }
+}
   
-  .socialSvg path {
+.socialSvg path {
     fill: rgb(255, 255, 255);
-  }
+}
   
-  .socialContainer:hover .socialSvg {
+.socialContainer:hover .socialSvg {
     animation: slide-in-top 0.3s both;
-  }
+}
   
-  @keyframes slide-in-top {
+@keyframes slide-in-top {
     0% {
       transform: translateY(-50px);
       opacity: 0;
@@ -233,11 +237,9 @@ footer {
       transform: translateY(0);
       opacity: 1;
     }
-  }
+}
   
-  
-
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
     header h1 {
         font-size: 1.6rem;
     }
